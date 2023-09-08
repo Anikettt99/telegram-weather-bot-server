@@ -1,7 +1,8 @@
 import { InjectModel } from '@nestjs/mongoose';
-import { User } from '../models/user';
+
 import * as mongoose from 'mongoose';
 import axios from 'axios';
+import { User } from '../models';
 
 export class WeatherService {
   constructor(

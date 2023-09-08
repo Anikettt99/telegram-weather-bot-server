@@ -2,9 +2,10 @@ import { Injectable } from '@nestjs/common';
 import TelegramBot = require('node-telegram-bot-api');
 import { WeatherService } from './Weather';
 import { InjectModel } from '@nestjs/mongoose';
-import { User } from '../models/user';
+
 import mongoose from 'mongoose';
 import { Cron, CronExpression } from '@nestjs/schedule';
+import { User } from '../models';
 
 @Injectable()
 export class TelegramService {
